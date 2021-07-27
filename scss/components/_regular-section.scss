@@ -17,7 +17,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   color:var(--secondary-text-color);
-  margin-bottom: 100px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px){
+    margin-bottom: 50px;
+  }
   }
   
   .regular-li{
@@ -36,7 +40,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 180px) / 6); 
+    flex-basis: calc((100% - 180px) / 6);
+   
     
   }
   }
