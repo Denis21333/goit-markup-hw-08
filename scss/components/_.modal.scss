@@ -63,11 +63,17 @@
     
     .checkbox-title{
     display: flex;
-    align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     color: var(--primary-text-color);
-    
+
+    @media screen and (min-width: 1200px){
+      display: flex;
+      font-size: 14px;
+      line-height: 1.71;
+      color: var(--primary-text-color);
+
+    }
     }
     
     
@@ -129,13 +135,16 @@
       background-repeat: 10px;
       display: block;
       cursor: pointer;
-      margin-right: 10px;
+      margin-right: 0px;
       
       .checkbox-input:checked + & {
         background-image: url(../images/icon-check.jpg) ;
         background-size: contain;
-        border:none;
-        
+        border:none;  
+      }
+
+      @media screen and (min-width: 1200px){
+        margin-right: 10px;
       }
 
     }
@@ -173,10 +182,15 @@
           padding: 40px;
           left: 50%;
           top: 50%;
-          width: 528px;
-          height: 580px;
+          width: 450px;
+          height: 609px;
           background-color: #ffffff;
           transform: translate(-50%, -50%);
+
+          @media screen and (min-width: 1200px){
+            width: 528px;
+            height: 580px;
+          }
       
       }
       
@@ -206,3 +220,4 @@
         visibility: hidden;
         pointer-events: none;
       }
+

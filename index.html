@@ -24,29 +24,32 @@
     <div class="container header__container">
       <nav class="site__nav ">
         <a class="logo link " href="./index.html"> <span class="logo__color">Web</span>Studio</a>
-        <ul class="site__list list ">
-          <li class="site__item"><a class="site__link current link site__after_link" href="">Студия</a></li>
-          <li class="site__item"><a class="site__link link" href="./portfolio.html">Портфолио</a></li>
-          <li class="site__item"><a class="site__link link" href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul class="contact__list list">
-        <li class="contact__item ">
-          <a class="contact__link link" href="mailto:info@devstudio.com">
-            <svg class="contact__svg_mail">
-              <use href="./images/icons-svg/symbol-defs.svg#icon-mail"></use>
-            </svg>
-            info@devstudio.com</a>
-        </li>
-        <li class="contact__item">
-          <a class="contact__link link" href="tel:+380961111111">
-            <svg class="contact__svg_mail">
-              <use href="./images/icons-svg/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a>
-        </li>
-      </ul>
-    </div>
+        <div class="site__none">
+          <ul class="site__list list ">
+            <li class="site__item"><a class="site__link current link site__after_link" href="">Студия</a></li>
+            <li class="site__item"><a class="site__link link" href="./portfolio.html">Портфолио</a></li>
+            <li class="site__item"><a class="site__link link" href="">Контакты</a></li>
+          </ul>
+         </nav>
+         <ul class="contact__list list">
+          <li class="contact__item ">
+            <a class="contact__link link" href="mailto:info@devstudio.com">
+              <svg class="contact__svg_mail">
+                <use href="./images/icons-svg/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a>
+          </li>
+          <li class="contact__item">
+            <a class="contact__link link" href="tel:+380961111111">
+              <svg class="contact__svg_mail">
+                <use href="./images/icons-svg/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </li>
+         </ul>
+        </div>
+        </div>
+        
   </header> -->
   <!--Секция героя-->
   <main>
@@ -368,7 +371,7 @@
           </li>
         </ul>
       </div>
-      <div class="mail-container">
+      <div>
         <form class="footer-form" action="">
           <label for="">
             <p class="email-title">Подпишитесь на рассылку</p>
@@ -417,7 +420,7 @@
         <div class="checkbox-div">
           <input class="checkbox-input visually-hidden" type="checkbox" name="checkbox" value="Соглашаюсь с рассылкой"
             id="Соглашаюсь с рассылкой">
-          <label class="checkbox-title" for="Соглашаюсь с рассылкой">Соглашаюсь с рассылкой и принимаю &nbsp; <a
+          <label class="checkbox-title" for="Соглашаюсь с рассылкой">Соглашаюсь с рассылкой и принимаю &nbsp; <a class="checkbox-link"
               href="">Условия договора</a> </label>
         </div>
         <button class="backdrop-btn" type="submit"> Отправить</button>
