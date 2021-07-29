@@ -5,10 +5,21 @@
     font-size: 26px;
     line-height: 1.19;
     color:var(--secondary-text-color);
+
+    @media screen and (min-width: 480px){
+      margin-right:0px ;
+    }
     }
     
-    .logo__color{
+    .logo_logo-color_accent{
       color: var(--accent-color);
     }
     
-   
+    %logo-set {
+      display: flex;
+      width: 44px;
+      height: 44px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
