@@ -21,35 +21,90 @@
 <body>
   <!--Шапка проекта-->
   <header class="header">
-    <div class="container header__container">
-      <nav class="site__nav ">
-        <a class="logo link " href="./index.html"> <span class="logo_logo-color_accent">Web</span>Studio</a>
-        <div class="site__none">
-          <ul class="site__list list ">
-            <li class="site__item"><a class="site__link current link site__after_link" href="">Студия</a></li>
-            <li class="site__item"><a class="site__link link" href="./portfolio.html">Портфолио</a></li>
-            <li class="site__item"><a class="site__link link" href="">Контакты</a></li>
-          </ul>
-         </nav>
-         <ul class="contact__list list">
-          <li class="contact__item ">
-            <a class="contact__link link" href="mailto:info@devstudio.com">
-              <svg class="contact__svg_mail">
-                <use href="./images/icons-svg/symbol-defs.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a>
+    <div class="container header_container">
+      <nav class="navigation">
+        <a class="logo logo_color_black link animate__hinge logo-header" href="./index.html">
+          <span class="logo_logo-color_accent">Web</span>Studio
+        </a>
+        <ul class="menu list">
+          <li class="menu-item">
+            <a class="menu-link current link  after-item menu_position_bottom-border" href="#">Студия</a>
           </li>
-          <li class="contact__item">
-            <a class="contact__link link" href="tel:+380961111111">
-              <svg class="contact__svg_mail">
-                <use href="./images/icons-svg/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a>
+          <li class="menu-item">
+            <a class="menu-link  link" href="./portfolio.html">Портфолио</a>
           </li>
-         </ul>
-        </div>
-        </div>
-        
+          <li class="menu-item">
+            <a class="menu-link link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="contact-list list">
+        <li class="contact-list__item">
+          <a class="contact-list__link link" href="mailto:info@devstudio.com">
+            <svg class="contact-list__icon" width="16px" height="12">
+              <use href="./images/icons-svg/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="contact-list__item">
+          <a class="contact-list__link link " href="tel:+38-096-111-11-11">
+            <svg class="contact-list__icon" width="10px" height="16px">
+              <use href="./images/icons-svg/symbol-defs.svg#icon-smartphone">
+              </use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+      <button class="burger-btn btn-hover-focus " type="button" data-menu-open>
+        <svg class="burger-btn__icon">
+          <use href="./images/icons-svg/symbol-defs6-1.svg#icon-menu_40px"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu__container">
+        <button class="mobile-menu-close-btn mobile-menu__close-btn btn-hover-focus " type="button" data-menu-close>
+          <svg class="mobile-menu-close-btn__icon">
+            <use href="./images/icons-svg/symbol-defs6-1.svg#icon-close_40px" ></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav list">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link link " href="#">Студия</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mobile-contact list">
+          <li class="mobile-contact__item">
+            <a class="mobile-contact__link mobile-contact__link-tel-font link" href="#">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contact__item">
+            <a class="mobile-contact__link mobile-contact__link-email-font link" href="#">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-social-list list">
+          <li class="mobile-social-list__item">
+            <a class="mobile-social-list__link link" href="#">Instagram</a>
+          </li>
+          <li class="mobile-social-list__item">
+            <a class="mobile-social-list__link link" href="#">Twitter</a>
+          </li>
+          <li class="mobile-social-list__item">
+            <a class="mobile-social-list__link link" href="#">Facebook</a>
+          </li>
+          <li class="mobile-social-list__item">
+            <a class="mobile-social-list__link link" href="#">linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
   <!--Секция героя-->
   <main>
@@ -125,19 +180,40 @@
         <ul class="work__list list">
           <div class="work__div">
             <li class="work__img_title">
-              <img src="./images/box1.jpg" alt="work with gadgets" width="370" height="294" />
+              <picture>
+                <source media="(min-width: 1200px)"
+                    srcset="./images/go-it-maket-images-minific/desctop/work/work-img-desctop1.webp 1x, ./images/go-it-maket-images-minific/desctop/work/work-img@2x-desctop1.webp 2x"
+                    type="image/webp">
+                <source media="(min-width: 1200px)"
+                    srcset="./images/go-it-maket-images-minific/desctop/work/work-img-desctop1.jpg 1x, ./images/go-it-maket-images-minific/desctop/work/work-img@2x-desctop1.jpg 2x">
+                    <img src="./images/box1.jpg" alt="work with gadgets" width="370" height="294" />
+               </picture>
               <p class="work__information">Десктопные приложения</p>
             </li>
           </div>
           <div class="work__div">
             <li class="work__img_title">
-              <img src="./images/box2.jpg" alt="work with gadgets" width="370" height="294" />
+              <picture>
+                <source media="(min-width: 1200px)"
+                    srcset="./images/go-it-maket-images-minific/desctop/work/work-img-desctop2.webp 1x, ./images/go-it-maket-images-minific/desctop/work/work-img@2x-desctop2.webp 2x"
+                    type="image/webp">
+                <source media="(min-width: 1200px)"
+                    srcset="./images/go-it-maket-images-minific/desctop/work/work-img-desctop2.jpg 1x, ./images/go-it-maket-images-minific/desctop/work/work-img@2x-desctop2.jpg 2x">
+                    <img src="./images/box2.jpg" alt="work with gadgets" width="370" height="294" />
+               </picture>
               <p class="work__information">Мобильные приложения</p>
             </li>
           </div>
           <div class="work__div">
             <li class="work__img_title">
-              <img src="./images/box3.jpg" alt="work with gadgets" width="370" height="294" />
+              <picture>
+                <source media="(min-width: 1200px)"
+                    srcset="./images/go-it-maket-images-minific/desctop/work/work-img-desctop3.webp 1x, ./images/go-it-maket-images-minific/desctop/work/work-img@2x-desctop3.webp 2x"
+                    type="image/webp">
+                <source media="(min-width: 1200px)"
+                    srcset="./images/go-it-maket-images-minific/desctop/work/work-img-desctop3.jpg 1x, ./images/go-it-maket-images-minific/desctop/work/work-img@2x-desctop3.jpg 2x">
+                    <img src="./images/box3.jpg" alt="work with gadgets" width="370" height="294" />
+               </picture>
               <p class="work__information"> Дизайнерские решения</p>
             </li>
           </div>
@@ -150,7 +226,27 @@
         <h2 class="team__section_title">Наша команда</h2>
         <ul class="team__list list">
           <li class="team__title">
-            <img src="./images/images2/igor_demyanenko.jpg" alt="Igor Demyanenko" width="100%" height="100%" />
+            <picture>
+              <source media="(min-width: 1200px)"
+                  srcset="./images/go-it-maket-images-minific/desctop/team/team-img-desctop1.webp 1x, ./images/go-it-maket-images-minific/desctop/team/team-img@2x-desctop1.webp 2x"
+                  type="image/webp">
+              <source media="(min-width: 1200px)"
+                  srcset="./images/go-it-maket-images-minific/desctop/team/team-img-desctop1.jpg 1x, ./images/go-it-maket-images-minific/desctop/team/team-img@2x-desctop1.jpg 2x">
+
+              <source media="(min-width: 768px)"
+              srcset="./images/go-it-maket-images-minific/tablet/team/team-img-tablet1.webp 1x, ./images/go-it-maket-images-minific/tablet/team/img@2x-tablet1.webp 2x"
+              type="image/webp">
+              <source media="(min-width: 768px)"
+              srcset="./images/go-it-maket-images-minific/tablet/team/team-img-tablet1.jpg 1x, ./images/go-it-maket-images-minific/tablet/team/img@2x-tablet1.jpg 2x">
+
+              <source media="(min-width: 480px)"
+                  srcset="./images/go-it-maket-images-minific/mobile/team/team-img-mobile1.webp 1x, ./images/go-it-maket-images-minific/mobile/team/team-img@2x-mobile1.webp 2x"
+                  type="image/webp">
+              <source media="(min-width: 480px)"
+                  srcset="./images/go-it-maket-images-minific/mobile/team/team-img-mobile1.jpg 1x, ./images/go-it-maket-images-minific/mobile/team/team-img@2x-mobile1.jpg 2x">
+
+                  <img src="./images/images2/igor_demyanenko.jpg" alt="Igor Demyanenko" width="100%" height="100%" />
+          </picture>
             <div class="team__name">
               <h3 class="team__name_title">Игорь Демьяненко</h3>
               <p class="team__profession">Product Designer</p>
@@ -179,7 +275,28 @@
             </div>
           </li>
           <li class="team__title">
-            <img src="./images/images2/olga_repina.jpg" alt="Olga Repina" width="100%" height="100%" />
+            <picture>
+              <source media="(min-width: 1200px)"
+                  srcset="./images/go-it-maket-images-minific/desctop/team/team-img-desctop2.webp 1x, ./images/go-it-maket-images-minific/desctop/team/team-img@2x-desctop2.webp 2x"
+                  type="image/webp">
+              <source media="(min-width: 1200px)"
+                  srcset="./images/go-it-maket-images-minific/desctop/team/team-img-desctop2.jpg 1x, ./images/go-it-maket-images-minific/desctop/team/team-img@2x-desctop2.jpg 2x">
+
+              <source media="(min-width: 768px)"
+              srcset="./images/go-it-maket-images-minific/tablet/team/team-img-tablet2.webp 1x, ./images/go-it-maket-images-minific/tablet/team/img@2x-tablet4.webp 2x"
+              type="image/webp">
+              <source media="(min-width: 768px)"
+              srcset="./images/go-it-maket-images-minific/tablet/team/team-img-tablet2.jpg 1x, ./images/go-it-maket-images-minific/tablet/team/img@2x-tablet4.jpg 2x">
+
+              <source media="(min-width: 480px)"
+                  srcset="./images/go-it-maket-images-minific/mobile/team/team-img-mobile2.webp 1x, ./images/go-it-maket-images-minific/mobile/team/team-img@2x-mobile2.webp 2x"
+                  type="image/webp">
+              <source media="(min-width: 480px)"
+                  srcset="./images/go-it-maket-images-minific/mobile/team/team-img-mobile2.jpg 1x, ./images/go-it-maket-images-minific/mobile/team/team-img@2x-mobile2.jpg 2x">
+
+                <img src="./images/images2/olga_repina.jpg" alt="Olga Repina" width="100%" height="100%" />
+          </picture>
+           
             <div class="team__name">
               <h3 class="team__name_title">Ольга Репина</h3>
               <p class="team__profession">Frontend Developer</p>
@@ -208,7 +325,28 @@
             </div>
           </li>
           <li class="team__title">
-            <img src="./images/images2/nikolay_tarasov.jpg" alt="Nikolay Tarasov" width="100%" height="100%" />
+            <picture>
+              <source media="(min-width: 1200px)"
+                  srcset="./images/go-it-maket-images-minific/desctop/team/team-img-desctop3.webp 1x, ./images/go-it-maket-images-minific/desctop/team/team-img@2x-desctop3.webp 2x"
+                  type="image/webp">
+              <source media="(min-width: 1200px)"
+                  srcset="./images/go-it-maket-images-minific/desctop/team/team-img-desctop3.jpg 1x, ./images/go-it-maket-images-minific/desctop/team/team-img@2x-desctop3.jpg 2x">
+
+              <source media="(min-width: 768px)"
+              srcset="./images/go-it-maket-images-minific/tablet/team/team-img-tablet3.webp 1x, ./images/go-it-maket-images-minific/tablet/team/img@2x-tablet2.webp 2x"
+              type="image/webp">
+              <source media="(min-width: 768px)"
+              srcset="./images/go-it-maket-images-minific/tablet/team/team-img-tablet3.jpg.jpg 1x, ./images/go-it-maket-images-minific/tablet/team/img@2x-tablet2.jpg 2x">
+
+              <source media="(min-width: 480px)"
+                  srcset="./images/go-it-maket-images-minific/mobile/team/team-img-mobile3.webp 1x, ./images/go-it-maket-images-minific/mobile/team/team-img@2x-mobile3.webp 2x"
+                  type="image/webp">
+              <source media="(min-width: 480px)"
+                  srcset="./images/go-it-maket-images-minific/mobile/team/team-img-mobile3.jpg 1x, ./images/go-it-maket-images-minific/mobile/team/team-img@2x-mobile3.jpg 2x">
+
+                  <img src="./images/images2/nikolay_tarasov.jpg" alt="Nikolay Tarasov" width="100%" height="100%" />
+          </picture>
+            
             <div class="team__name">
               <h3 class="team__name_title">Николай Тарасов</h3>
               <p class="team__profession">Marketing</p>
@@ -237,7 +375,28 @@
             </div>
           </li>
           <li class="team__title">
-            <img src="./images/images2/mikhail_ermakov.jpg" alt="Mikhail Ermakov" width="100%" height="100%" />
+            <picture>
+              <source media="(min-width: 1200px)"
+                  srcset="./images/go-it-maket-images-minific/desctop/team/team-img-desctop4.webp 1x, ./images/go-it-maket-images-minific/desctop/team/team-img@2x-desctop4.webp 2x"
+                  type="image/webp">
+              <source media="(min-width: 1200px)"
+                  srcset="./images/go-it-maket-images-minific/desctop/team/team-img-desctop4.jpg 1x, ./images/go-it-maket-images-minific/desctop/team/team-img@2x-desctop4.jpg 2x">
+
+              <source media="(min-width: 768px)"
+              srcset="./images/go-it-maket-images-minific/tablet/team/team-img-tablet4.webp 1x, ./images/go-it-maket-images-minific/tablet/team/img@2x-tablet3.webp 2x"
+              type="image/webp">
+              <source media="(min-width: 768px)"
+              srcset="./images/go-it-maket-images-minific/tablet/team/team-img-tablet4.jpg 1x, ./images/go-it-maket-images-minific/tablet/team/img@2x-tablet3.jpg 2x">
+
+              <source media="(min-width: 480px)"
+                  srcset="./images/go-it-maket-images-minific/mobile/team/team-img-mobile4.webp 1x, ./images/go-it-maket-images-minific/mobile/team/team-img@2x-mobile4.webp 2x"
+                  type="image/webp">
+              <source media="(min-width: 480px)"
+                  srcset="./images/go-it-maket-images-minific/mobile/team/team-img-mobile4.jpg 1x, ./images/go-it-maket-images-minific/mobile/team/team-img@2x-mobile4.jpg 2x">
+
+                  <img src="./images/images2/mikhail_ermakov.jpg" alt="Mikhail Ermakov" width="100%" height="100%" />
+          </picture>
+            
             <div class="team__name">
               <h3 class="team__name_title">Михаил Ермаков</h3>
               <p class="team__profession">UI Designer</p>
@@ -414,7 +573,7 @@
         <div class="checkbox-div">
           <input class="checkbox-input visually-hidden" type="checkbox" name="checkbox" value="Соглашаюсь с рассылкой"
             id="Соглашаюсь с рассылкой">
-          <label class="checkbox-title" for="Соглашаюсь с рассылкой">Соглашаюсь с рассылкой и принимаю &nbsp; <a class="checkbox-link"
+          <label class="checkbox-title" for="Соглашаюсь с рассылкой">Соглашаюсь с рассылкой и принимаю &nbsp;<a class="checkbox-link"
               href="">Условия договора</a> </label>
         </div>
         <button class="backdrop-btn" type="submit"> Отправить</button>
@@ -427,6 +586,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
