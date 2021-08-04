@@ -12,18 +12,28 @@
   
   .regular-title{
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color:var(--secondary-text-color);
   margin-bottom: 30px;
 
   @media screen and (min-width: 1200px){
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--secondary-text-color);
     margin-bottom: 50px;
+  
   }
   }
   
+
+
+
   .regular-li{
   height: 92px;
   flex-basis: calc((100% - 60px) / 2);

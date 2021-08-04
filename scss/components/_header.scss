@@ -263,6 +263,10 @@
     }
     
     .mobile-menu__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
       position: relative;
       padding-top: 48px;
       padding-bottom: 48px;
@@ -270,7 +274,7 @@
     }
     
     .mobile-nav {
-      margin-bottom: 302px;
+     
     
       font-weight: 500;
       font-size: 40px;
